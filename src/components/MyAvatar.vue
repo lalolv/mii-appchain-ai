@@ -14,9 +14,10 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div>
+  <div class="h-auto w-auto rounded-2xl overflow-hidden hover:drop-shadow-2xl">
     <img
-      class="md:h-96 md:w-96 object-cover"
+      class="w-full h-full object-cover transition ease-in-out 
+        hover:scale-125 transform-gpu"
       :src="`${quUrl}/${qnkey}-avatar_thumb`"
       alt="Modern building architecture"
       loading="lazy"

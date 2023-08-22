@@ -37,8 +37,8 @@ import MyAvatar from '@/components/MyAvatar.vue'
     </div>
   </div>
   <!-- 图片列表 -->
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 2xl:grid-cols-4
-    gap-8 my-10 justify-items-center">
+  <div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1
+    gap-4 my-10 justify-items-center">
     <my-avatar qnkey="bot-1.jpg"></my-avatar>
     <my-avatar qnkey="bot-2.jpg"></my-avatar>
     <my-avatar qnkey="bot-3.jpg"></my-avatar>

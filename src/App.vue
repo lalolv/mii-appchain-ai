@@ -1,11 +1,11 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import { MyHeader } from '@/components'
+import { MyHeader, MyFooter } from '@/components'
 </script>
 
 <template>
   <div class="bg-white">
-    <!-- 标题栏 -->
+    <!-- Header -->
     <my-header></my-header>
     <!-- Main -->
     <div class="relative isolate px-6 pt-0 lg:px-8">
@@ -42,7 +42,7 @@ import { MyHeader } from '@/components'
       <RouterView />
       <!-- 底部过度背景 -->
       <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-40rem)]"
         aria-hidden="true"
       >
         <div
@@ -70,6 +70,8 @@ import { MyHeader } from '@/components'
         />
       </div>
     </div>
+    <!-- Footer -->
+    <my-footer></my-footer>
   </div>
 </template>
 
