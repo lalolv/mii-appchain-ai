@@ -14,7 +14,8 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div class="h-auto w-auto rounded-2xl overflow-hidden hover:drop-shadow-2xl">
+  <a class="h-auto w-auto rounded-2xl overflow-hidden cursor-pointer hover:drop-shadow-2xl" 
+    :href="`${quUrl}/${qnkey}`" target="_blank">
     <img
       class="w-full h-full object-cover transition ease-in-out 
         hover:scale-125 transform-gpu"
@@ -22,5 +23,5 @@ onMounted(()=>{
       alt="Modern building architecture"
       loading="lazy"
     />
-  </div>
+  </a>
 </template>

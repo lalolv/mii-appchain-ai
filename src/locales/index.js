@@ -34,12 +34,22 @@ function getLangFiles(mList, msg) {
   }
 }
 
+//得到默认使用的语言
+const getDefaultLang = () => {
+  // 用户指定了默认语言时，使用用户指定的
+  if (navigator.language == 'zh-CN') {
+    return 'zh-CN'
+  } else {
+    return 'en-US'
+  }
+}
+
 //注册i8n实例并引入语言文件
 const i18n = createI18n({
   legacy: false, // 使用Composition API，这里必须设置为false
   globalInjection: true,
   global: true,
-  locale: 'zh-CN',
+  locale: getDefaultLang(),
   fallbackLocale: 'zh-CN', // 默认语言
   messages: getLangAll()
 })
