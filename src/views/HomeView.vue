@@ -1,5 +1,17 @@
 <script setup>
 import MyAvatar from '@/components/MyAvatar.vue'
+import { getAvatars } from '@/api/api'
+import { ref, onMounted } from 'vue'
+
+// 头像列表
+const avatars = ref('')
+
+onMounted(async () => {
+  let res = await getAvatars(0, 24)
+  if (res['status'] == 200) {
+    avatars.value = res['data']
+  }
+})
 </script>
 
 <template>
@@ -37,14 +49,8 @@ import MyAvatar from '@/components/MyAvatar.vue'
   </div>
   <!-- 图片列表 -->
   <div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-4 my-10 justify-items-center">
-    <my-avatar qnkey="bot-1.jpg"></my-avatar>
-    <my-avatar qnkey="bot-2.jpg"></my-avatar>
-    <my-avatar qnkey="bot-3.jpg"></my-avatar>
-    <my-avatar qnkey="bot-4.jpg"></my-avatar>
-    <my-avatar qnkey="bot-5.jpg"></my-avatar>
-    <my-avatar qnkey="bot-6.jpg"></my-avatar>
-    <my-avatar qnkey="bot-7.jpg"></my-avatar>
-    <my-avatar qnkey="bot-8.jpg"></my-avatar>
-    <my-avatar qnkey="bot-9.jpg"></my-avatar>
+    <template v-for="item in avatars">
+      <my-avatar :qnkey="item.key"></my-avatar>
+    </template>
   </div>
 </template>
