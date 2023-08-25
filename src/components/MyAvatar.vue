@@ -19,7 +19,7 @@ function useDefaultImage(event) {
 <template>
   <a
     class="h-auto w-auto rounded-2xl overflow-hidden cursor-pointer hover:drop-shadow-2xl"
-    href="https://opensea.io/appchain_ai"
+    href="https://opensea.io/appchainai"
     target="_blank"
   >
     <img
