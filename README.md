@@ -5,19 +5,19 @@
 </div>
 
 <div align="center">
-  <h1>AI 头像</h1>
-</div>
 
-<div align="center">
-    简体中文 | [English](./README_en.md)
+<h1>AI 头像</h1>
 
-    获取 AI 生成的独特头像，定制您的专属头像。
+简体中文 | [English](./README_en.md)
 
-    所有头像均由 AI 自动生成，不限量使用，没有版权限制。
+获取 AI 生成的独特头像，定制您的专属头像。
 
-    每周定期更新 AI 头像
+所有头像均由 AI 自动生成，不限量使用，没有版权限制。
 
-    [官网](https://mii.appchain.ai) / [OpenSea](https://opensea.io/appchainai) / [Pinterest](https://www.pinterest.com/lalolv/) / [Facebook](https://mii.appchain.ai/facebook.com/appchainai) / [Twitter](https://twitter.com/AppChainAI)
+每周定期更新 AI 头像
+
+[官网](https://mii.appchain.ai) / [OpenSea](https://opensea.io/appchainai) / [Pinterest](https://www.pinterest.com/lalolv/) / [Facebook](https://mii.appchain.ai/facebook.com/appchainai) / [Twitter](https://twitter.com/AppChainAI)
+
 </div>
 
 ![cover](./public/banner.png)
