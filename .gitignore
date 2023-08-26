@@ -31,4 +31,5 @@ node_modules
 *.sw?
 package-lock.json
 .env.dev
+.env
 
